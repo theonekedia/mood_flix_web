@@ -1,0 +1,22 @@
+<%= simple_form_for(@post) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :status_id %>
+    <%= f.input :date %>
+    <%= f.input :max_people %>
+    <%= f.input :location %>
+    <%= f.input :location_lat %>
+    <%= f.input :location_lng %>
+    <%= f.input :user_id %>
+    <%= f.input :post_status_id %>
+    <%= f.input :user_lat %>
+    <%= f.input :user_lng %>
+    <%= f.input :description %>
+    <%= f.input :min_people %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

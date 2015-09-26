@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @post.status_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @post.date %>
+</p>
+
+<p>
+  <strong>Max people:</strong>
+  <%= @post.max_people %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @post.location %>
+</p>
+
+<p>
+  <strong>Location lat:</strong>
+  <%= @post.location_lat %>
+</p>
+
+<p>
+  <strong>Location lng:</strong>
+  <%= @post.location_lng %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user_id %>
+</p>
+
+<p>
+  <strong>Post status:</strong>
+  <%= @post.post_status_id %>
+</p>
+
+<p>
+  <strong>User lat:</strong>
+  <%= @post.user_lat %>
+</p>
+
+<p>
+  <strong>User lng:</strong>
+  <%= @post.user_lng %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Min people:</strong>
+  <%= @post.min_people %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

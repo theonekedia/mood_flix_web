@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @device_registration.device_id %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @device_registration.email %>
+</p>
+
+<p>
+  <strong>Registration key:</strong>
+  <%= @device_registration.registration_key %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @device_registration.user_id %>
+</p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @device_registration.platform %>
+</p>
+
+<%= link_to 'Edit', edit_device_registration_path(@device_registration) %> |
+<%= link_to 'Back', device_registrations_path %>

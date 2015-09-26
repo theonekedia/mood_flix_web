@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Device Registrations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Email</th>
+      <th>Registration key</th>
+      <th>User</th>
+      <th>Platform</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @device_registrations.each do |device_registration| %>
+      <tr>
+        <td><%= device_registration.device_id %></td>
+        <td><%= device_registration.email %></td>
+        <td><%= device_registration.registration_key %></td>
+        <td><%= device_registration.user_id %></td>
+        <td><%= device_registration.platform %></td>
+        <td><%= link_to 'Show', device_registration %></td>
+        <td><%= link_to 'Edit', edit_device_registration_path(device_registration) %></td>
+        <td><%= link_to 'Destroy', device_registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Device registration', new_device_registration_path %>
