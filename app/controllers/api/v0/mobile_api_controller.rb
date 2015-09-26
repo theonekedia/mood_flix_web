@@ -164,8 +164,13 @@ module V0
 			render :json => response
 		end
 
-		def method_name
-			
+		def category_all
+			response = Hash.new
+			result = Hash.new
+			result['category'] = Posts::Category.all.map{|c| {id: c.id,name: c.name}}.to_json
+			response['result'] = result
+			response.merge! ApiStatusList::OK
+			render :json => response
 		end
 	end
 end

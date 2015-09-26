@@ -1,6 +1,7 @@
 development:
   google_key: ''
   google_secret: ''
-  gcm_key: ''
-  facebook_key: ''
-  facebook_secret: ''
+  gcm_key: 'AIzaSyAIl1APzTt7AOdxBG8G9kG35UOgTxRQSl8'
+  facebook_key: '479100945621146'
+  facebook_secret: 'a7649ba0488a8ed6789a01e2dce42c3d'
+  api_key: 'mood_flix'

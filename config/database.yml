@@ -8,6 +8,10 @@ default: &default
   adapter: postgis
   pool: 5
   timeout: 5000
+  encoding: unicode
+  username: theonekedia
+  schema_search_path: "public,postgis"
+  host: localhost
 
 development:
   <<: *default

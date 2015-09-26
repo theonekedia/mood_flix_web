@@ -154,3 +154,131 @@
 [09/27/15 00:25:24 +0530 Goldies-MacBook-Pro.local (18119)] INFO : Installing Rails 4 view instrumentation
 [09/27/15 00:25:24 +0530 Goldies-MacBook-Pro.local (18119)] INFO : Installing Rails 4 Error instrumentation
 [09/27/15 00:25:24 +0530 Goldies-MacBook-Pro.local (18119)] INFO : Finished instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] WARN : No configuration file found. Working directory = /Users/theonekedia/code/hackathon/food_lover
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] WARN : Looked in these locations (based on defaults): /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/.newrelic/newrelic.yml, /Users/theonekedia/newrelic.yml
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Environment: development
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : No known dispatcher detected.
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Application: development
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing ActiveJob instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing middleware-based Excon instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing HTTPClient instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Net instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing deferred Rack instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Redis Instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Resque instrumentation
+[09/27/15 00:56:23 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/15 00:56:24 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Rails 4 view instrumentation
+[09/27/15 00:56:24 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Installing Rails 4 Error instrumentation
+[09/27/15 00:56:24 +0530 Goldies-MacBook-Pro.local (18441)] INFO : Finished instrumentation
+[09/27/15 00:59:43 +0530 Goldies-MacBook-Pro.local (17410)] ERROR : Invalid license key, please contact support@newrelic.com
+[09/27/15 00:59:43 +0530 Goldies-MacBook-Pro.local (17410)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[09/27/15 01:01:34 +0530 Goldies-MacBook-Pro.local (17410)] INFO : Starting Agent shutdown
+[09/27/15 01:01:39 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/15 01:01:39 +0530 Goldies-MacBook-Pro.local (18569)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/15 01:01:39 +0530 Goldies-MacBook-Pro.local (18569)] WARN : No configuration file found. Working directory = /Users/theonekedia/code/hackathon/food_lover
+[09/27/15 01:01:39 +0530 Goldies-MacBook-Pro.local (18569)] WARN : Looked in these locations (based on defaults): /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/.newrelic/newrelic.yml, /Users/theonekedia/newrelic.yml
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Environment: development
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : No known dispatcher detected.
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Application: development
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing ActiveJob instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing middleware-based Excon instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing HTTPClient instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Net instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing deferred Rack instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Redis Instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Resque instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Rails 4 view instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Installing Rails 4 Error instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Finished instrumentation
+[09/27/15 01:01:40 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Doing deferred dependency-detection before Rack startup
+[09/27/15 01:01:46 +0530 Goldies-MacBook-Pro.local (18569)] ERROR : Invalid license key, please contact support@newrelic.com
+[09/27/15 01:01:46 +0530 Goldies-MacBook-Pro.local (18569)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[09/27/15 01:09:28 +0530 Goldies-MacBook-Pro.local (18569)] INFO : Starting Agent shutdown
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] WARN : No configuration file found. Working directory = /Users/theonekedia/code/hackathon/food_lover
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] WARN : Looked in these locations (based on defaults): /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/.newrelic/newrelic.yml, /Users/theonekedia/newrelic.yml
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Environment: development
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : No known dispatcher detected.
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Application: development
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing ActiveJob instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing middleware-based Excon instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing HTTPClient instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Net instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing deferred Rack instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Redis Instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Resque instrumentation
+[09/27/15 01:09:40 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/15 01:09:41 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Rails 4 view instrumentation
+[09/27/15 01:09:41 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Installing Rails 4 Error instrumentation
+[09/27/15 01:09:41 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Finished instrumentation
+[09/27/15 01:09:41 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Doing deferred dependency-detection before Rack startup
+[09/27/15 01:09:57 +0530 Goldies-MacBook-Pro.local (18701)] ERROR : Invalid license key, please contact support@newrelic.com
+[09/27/15 01:09:57 +0530 Goldies-MacBook-Pro.local (18701)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[09/27/15 01:11:08 +0530 Goldies-MacBook-Pro.local (18701)] INFO : Starting Agent shutdown
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] WARN : No configuration file found. Working directory = /Users/theonekedia/code/hackathon/food_lover
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] WARN : Looked in these locations (based on defaults): /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/.newrelic/newrelic.yml, /Users/theonekedia/newrelic.yml
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Environment: development
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : No known dispatcher detected.
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Application: development
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing ActiveJob instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing middleware-based Excon instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing HTTPClient instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Net instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing deferred Rack instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Redis Instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Resque instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Rails 4 view instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Installing Rails 4 Error instrumentation
+[09/27/15 01:11:15 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Finished instrumentation
+[09/27/15 01:11:16 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Doing deferred dependency-detection before Rack startup
+[09/27/15 01:11:21 +0530 Goldies-MacBook-Pro.local (18746)] ERROR : Invalid license key, please contact support@newrelic.com
+[09/27/15 01:11:21 +0530 Goldies-MacBook-Pro.local (18746)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[09/27/15 01:15:27 +0530 Goldies-MacBook-Pro.local (18746)] INFO : Starting Agent shutdown
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] WARN : No configuration file found. Working directory = /Users/theonekedia/code/hackathon/food_lover
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] WARN : Looked in these locations (based on defaults): /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/config/newrelic.yml, /Users/theonekedia/code/hackathon/food_lover/newrelic.yml, /Users/theonekedia/.newrelic/newrelic.yml, /Users/theonekedia/newrelic.yml
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Environment: development
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] INFO : No known dispatcher detected.
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Application: development
+[09/27/15 01:15:39 +0530 Goldies-MacBook-Pro.local (18834)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing ActiveJob instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing middleware-based Excon instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing HTTPClient instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Net instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing deferred Rack instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Redis Instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Resque instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Rails 4 view instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Installing Rails 4 Error instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Finished instrumentation
+[09/27/15 01:15:40 +0530 Goldies-MacBook-Pro.local (18834)] INFO : Doing deferred dependency-detection before Rack startup
+[09/27/15 01:16:47 +0530 Goldies-MacBook-Pro.local (18834)] ERROR : Invalid license key, please contact support@newrelic.com
+[09/27/15 01:16:47 +0530 Goldies-MacBook-Pro.local (18834)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accepted by:</strong>
+  <%= @posts_invite.accepted_by %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @posts_invite.post_id %>
+</p>
+
+<p>
+  <strong>Invite status:</strong>
+  <%= @posts_invite.invite_status_id %>
+</p>
+
+<%= link_to 'Edit', edit_posts_invite_path(@posts_invite) %> |
+<%= link_to 'Back', posts_invites_path %>

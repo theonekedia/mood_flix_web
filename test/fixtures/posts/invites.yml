@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accepted_by: 
+  post_id: 1
+  invite_status_id: 1
+
+two:
+  accepted_by: 
+  post_id: 1
+  invite_status_id: 1

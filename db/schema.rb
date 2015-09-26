@@ -11,7 +11,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150926175826) do
+ActiveRecord::Schema.define(version: 20150926193337) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "device_registrations", force: :cascade do |t|
+    t.string   "device_id"
+    t.string   "email"
+    t.text     "registration_key"
+    t.integer  "user_id"
+    t.string   "platform"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.integer  "status_id"
+    t.date     "date"
+    t.integer  "max_people"
+    t.string   "location"
+    t.float    "location_lat"
+    t.float    "location_lng"
+    t.integer  "user_id"
+    t.integer  "post_status_id"
+    t.float    "user_lat"
+    t.float    "user_lng"
+    t.text     "description"
+    t.integer  "min_people"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "posts_categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts_invites", force: :cascade do |t|
+    t.integer  "accepted_by"
+    t.integer  "post_id"
+    t.integer  "invite_status_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "posts_statuses", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "statuses", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name",             default: "", null: false
@@ -41,8 +97,8 @@ ActiveRecord::Schema.define(version: 20150926175826) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

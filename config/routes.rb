@@ -1,60 +1,32 @@
 Rails.application.routes.draw do
-  resources :device_registrations
-  resources :posts
+  namespace :posts do
+    resources :categories
+  end
   root to: 'website#index'
+  
+  resources :device_registrations
+  resources :posts do
+    resources :invites
+    resources :statuses
+  end
+  resources :statuses
   resources :users
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  ############ MOBILE API ##############
+  namespace :api do
+    namespace :v0 do
+      match 'mobile/register'             => 'mobile_api#register',           :via => [:put, :get, :post] 
+      match 'mobile/user/login'           => 'mobile_api#login',              :via => [:put, :get, :post] # create a new user
+      match 'mobile/notifications'        => 'mobile_api#notifications',      :via => [:put, :get, :post] # create a new user
+      match 'mobile/send_notifications'   => 'mobile_api#send_notifications', :via => [:put, :get, :post] # create a new user
+      match 'mobile/location'             => 'mobile_api#location',           :via => [:put, :get, :post] # fetch location 
+      match 'mobile/cities'               => 'mobile_api#cities',             :via => [:put, :get, :post]
+      match 'mobile/city_localities'      => 'mobile_api#city_with_locality', :via => [:put, :get, :post]
+      match 'mobile/nearby'               => 'mobile_api#nearby_restaurants', :via => [:put, :get, :post]
+      match 'mobile/category'             => 'mobile_api#category_all',       :via => [:put, :get, :post]
+      match 'mobile/favlist'              => 'mobile_api#user_favlist',       :via => [:put, :get, :post]
+      match 'mobile/user/details'         => 'mobile_api#user_details',       :via => [:put, :get, :post]
+      match 'mobile/:city_id/localities'  => 'mobile_api#city_localities',    :via => [:put, :get, :post]
+    end
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  end  
 end
