@@ -9,7 +9,7 @@ module V0
 		######## Register a Device ########
 		def register
 			response = Hash.new
-			# result = Hash.new
+			result = Hash.new
 			if params[:device_id]
 				device = DeviceRegistration.find_or_initialize_by(device_id: params[:device_id].to_s.strip)
 				device.email = params[:email].to_s.strip
@@ -17,7 +17,8 @@ module V0
 				device.user_id = params[:user_id] if params[:user_id]
 				device.platform = params[:platform] || 'Android'
 				if device.save!
-					result['devise'] = {reg_id: device.id}
+					result = {reg_id: device.id}
+					response['result'] = result
 					response.merge! ApiStatusList::OK
 				else
 					response.merge! ApiStatusList::UNKNOWN_ERROR
@@ -153,7 +154,8 @@ module V0
 					auth.save!
 					user.sign_in_count +=1
 					user.save!
-					response['result'] = {id: user.id, user: user.name, email: user.email, profile_img: user.profile_img, profile_type: user.profile_type }
+					response['result'] = {id: user.id, first_name: user.first_name,last_name: user.last_name, email: user.email, profile_img: user.profile_img, profile_type: user.profile_type }
+					result['category'] = Posts::Category.all.map{|c| {id: c.id,name: c.name}}.to_json
 					response.merge! ApiStatusList::OK
 				else
 					response.merge! ApiStatusList::UNKNOWN_ERROR
@@ -167,9 +169,48 @@ module V0
 		def category_all
 			response = Hash.new
 			result = Hash.new
-			result['category'] = Posts::Category.all.map{|c| {id: c.id,name: c.name}}.to_json
+			result['category'] = Posts::Category.all.map{|c| {id: c.id,name: c.name}}
 			response['result'] = result
 			response.merge! ApiStatusList::OK
+			render :json => response
+		end
+
+
+		def create_post
+			response = Hash.new
+			result = Hash.new
+			post = Post.find_or_initialize_by(user_id: params[:user_id], location:params[:location], date: Date.today)
+			post.description = params[:description]
+			post.location_lat = params[:loc_lat]
+			post.location_lng = params[:loc_lng]
+			post.user_lat = params[:user_lat]
+			post.user_lng = params[:user_lng]
+			post.category_id = params[:category_id]
+			post.max_people = params[:max_people]
+			post.min_people = params[:min_people]
+			if post.save!
+				response['result'] = result
+				response.merge! ApiStatusList::OK
+			else
+				response.merge! ApiStatusList::UNKNOWN_ERROR
+			end
+			render :json => response
+		end
+
+		def all_post
+			response = Hash.new
+			result = Hash.new
+			if !params[:user_id].empty?
+				posts = Post.includes(:user).where.not(user_id: params[:user_id].to_i)
+							.where('created_at > ?', (Time.now - 5.hour))
+				result['post'] = posts.map{|post| {
+					id: post.id, description:post.description, user_id: post.user_id, 
+					image: post.user.profile_img, location: post.location
+					}}
+				response['result'] = result
+				response.merge! ApiStatusList::OK
+				
+			end
 			render :json => response
 		end
 	end

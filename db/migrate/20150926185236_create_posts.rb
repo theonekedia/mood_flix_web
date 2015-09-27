@@ -13,6 +13,7 @@ class CreatePosts < ActiveRecord::Migration
       t.float   :user_lng
       t.text    :description
       t.integer :min_people
+      t.integer :category_id
 
       t.timestamps null: false
     end

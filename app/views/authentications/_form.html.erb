@@ -1,0 +1,16 @@
+<%= simple_form_for(@authentication) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :provider %>
+    <%= f.input :uid %>
+    <%= f.input :token %>
+    <%= f.input :token_expiry_at %>
+    <%= f.input :token_secret %>
+    <%= f.input :string %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

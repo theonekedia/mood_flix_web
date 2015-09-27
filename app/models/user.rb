@@ -1,9 +1,10 @@
 class User < ActiveRecord::Base
-	validates :name, presence: true
+	validates :first_name, presence: true
+	# validates :last_name, presence: true
 	validates :email, presence: true
 	has_many :authentications, dependent: :destroy
 	has_many :reviews, dependent: :destroy
-	# has_many :favourites, dependent: :destroy
+	has_many :posts, dependent: :destroy
 	has_many :favlists
 	has_one :mobile_registration
 	has_one :preference, class_name: 'Users::Preference'
@@ -16,7 +17,8 @@ class User < ActiveRecord::Base
 	def self.from_omniauth(auth)
     	User.where(auth.info.slice(:email)).first_or_initialize.tap do |user|
     		if user.new_record?
-		    	user.name = auth.info.name rescue nil
+		    	user.first_name = auth.info.first_name rescue nil
+		    	user.last_name = auth.info.last_name rescue nil
 				user.username = auth.extra.raw_info.username rescue nil
 				user.gender = auth.extra.raw_info.gender rescue nil
 				user.email = auth.info.email rescue nil
